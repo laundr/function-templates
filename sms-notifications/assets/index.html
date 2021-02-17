@@ -45,7 +45,7 @@
   </head>
   <body>
     <header>
-      <h1>Welcome to your new Twilio App</h1>
+      <h1>Customer SMS MicroApp</h1>
     </header>
     <div role="main">
       <section>
@@ -72,7 +72,7 @@
         <ul id="recipients"></ul>
       </section>
       <section>
-        <h3>Send your notification</h3>
+        <h3>Send notification</h3>
         <form id="sendNotificationForm">
           <fieldset>
             <label for="passcodeInput" required>Application Passcode</label>
@@ -87,7 +87,19 @@
         <h3>Result</h3>
         <p id="resultSection"></p>
       </section>
-      <!-- EDIT_CODE -->
+      <section>
+        <H3>USERTABLE</H3>
+        <table id="userTable" class="table table-borderless table-striped table-earning">
+          <thead>
+            <tr>
+              <th>date</th>
+              <th>file name</th>
+            </tr>
+          </thead>
+          <tbody id="userBody"></tbody>
+        </table>
+        <script src="user-query.js"></script>
+      </section>
     </div>
     <footer>
       <p>

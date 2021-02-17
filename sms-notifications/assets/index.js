@@ -3,6 +3,7 @@ const sendNotificationForm = document.getElementById('sendNotificationForm');
 const newRecipientInput = document.getElementById('newRecipientInput');
 const recipientList = document.getElementById('recipients');
 const resultSection = document.getElementById('resultSection');
+const userTable = document.getElementById('userTable');
 
 const recipients = [];
 
@@ -82,4 +83,6 @@ sendNotificationForm.addEventListener('submit', (evt) => {
     resultSection.innerText = 'Sending messages. One moment';
     sendMessages(evt.target);
   }
+
 });
+
